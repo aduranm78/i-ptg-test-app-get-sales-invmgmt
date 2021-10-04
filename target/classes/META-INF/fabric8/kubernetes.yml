@@ -6,7 +6,9 @@ items:
   kind: Service
   metadata:
     annotations:
+      fabric8.io/git-commit: 17d7f30723ef63cf2a79c00a706f02b044696f25
       fabric8.io/iconUrl: img/icons/camel.svg
+      fabric8.io/git-branch: main
     labels:
       expose: "true"
       app: i-ptg-test-get-sales-invmgmt
@@ -28,7 +30,9 @@ items:
   kind: Deployment
   metadata:
     annotations:
+      fabric8.io/git-commit: 17d7f30723ef63cf2a79c00a706f02b044696f25
       fabric8.io/iconUrl: img/icons/camel.svg
+      fabric8.io/git-branch: main
       fabric8.io/metrics-path: dashboard/file/camel-routes.json/?var-project=i-ptg-test-get-sales-invmgmt&var-version=0.1.0
     labels:
       app: i-ptg-test-get-sales-invmgmt
@@ -47,7 +51,9 @@ items:
     template:
       metadata:
         annotations:
+          fabric8.io/git-commit: 17d7f30723ef63cf2a79c00a706f02b044696f25
           fabric8.io/iconUrl: img/icons/camel.svg
+          fabric8.io/git-branch: main
           fabric8.io/metrics-path: dashboard/file/camel-routes.json/?var-project=i-ptg-test-get-sales-invmgmt&var-version=0.1.0
         labels:
           app: i-ptg-test-get-sales-invmgmt
